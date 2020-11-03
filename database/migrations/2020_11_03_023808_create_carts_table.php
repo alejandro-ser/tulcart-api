@@ -17,6 +17,7 @@ class CreateCartsTable extends Migration
             $table->id();
             $table->boolean('status');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

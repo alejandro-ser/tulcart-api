@@ -23,6 +23,7 @@ class CreateProductCartsTable extends Migration
                     ->onDelete('cascade');
             $table->integer('quantity');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
