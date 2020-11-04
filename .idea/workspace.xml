@@ -11,6 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="35ebff24-42a7-4baf-bf75-2b57e544b44d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/ProductCart.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Cart.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CartsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CartsController.php" afterDir="false" />
@@ -167,7 +168,7 @@
       <option name="presentableId" value="Default" />
       <updated>1604391636491</updated>
       <workItem from="1604391656732" duration="5490000" />
-      <workItem from="1604433874049" duration="11513000" />
+      <workItem from="1604433874049" duration="12439000" />
     </task>
     <task id="LOCAL-00001" summary="Se crearon controller resource">
       <created>1604400501780</created>
@@ -196,7 +197,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Se crearon controller resource" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se crearon controller resource" />
+    <MESSAGE value="Metodos para relaciones en los modelos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Metodos para relaciones en los modelos" />
   </component>
   <component name="WindowStateProjectService">
     <state x="413" y="154" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1604447429649">
