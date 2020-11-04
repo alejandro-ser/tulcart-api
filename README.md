@@ -1,3 +1,14 @@
+## Iniciar proyecto
+
+- Clonar este repositorio `https://github.com/alejandro-ser/tulcar-api`
+- Ingresar al directorio `cd tulcart-api`    
+- Ejecutar el comando `composer install` para instalar las dependencias
+- Ejecutar el comando `php artisan migrate`
+- Ejecutar el comando `php artisan db:seed` para crear los productos y carros
+- Ejecutar el comando `php artisan serve` para iniciar la app en servidor local
+- Abrir la siguiente dirección `http://localhost:8000/` en el navegador
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">

@@ -49,8 +49,7 @@ class CartsController extends Controller
     public function show($id)
     {
         $cart = Cart::findOrFail($id)->first();
-        $productsCart = $cart->products;
-        return response()->json($productsCart, 200);
+        return response()->json($cart, 200);
     }
 
     /**
