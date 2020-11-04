@@ -16,4 +16,8 @@ class Product extends Model
         'sku',
         'description',
     ];
+
+    public function carts(){
+        return $this->belongsToMany('App\Cart', 'product_cart');
+    }
 }

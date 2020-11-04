@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Cart;
 use Illuminate\Http\Request;
 
 class CartsController extends Controller
@@ -13,7 +14,9 @@ class CartsController extends Controller
      */
     public function index()
     {
-        //
+        $carts = Cart::all();
+
+        return response()->json($carts, 200);
     }
 
     /**
@@ -45,7 +48,9 @@ class CartsController extends Controller
      */
     public function show($id)
     {
-        //
+        $cart = Cart::findOrFail($id)->first();
+        $productsCart = $cart->products;
+        return response()->json($productsCart, 200);
     }
 
     /**

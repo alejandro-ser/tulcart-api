@@ -28,3 +28,9 @@ Route::get('product/{id}', [APIController::class,  'product']);*/
 Route::get('cart/{id}', [APIController::class,  'cart']);*/
 
 Route::resource('products', 'ProductsController');
+
+Route::prefix('products')->group(function () {
+    Route::post('add', [ProductsController::class,  'addToCart'])->name('products.add');
+});
+
+Route::resource('carts', 'CartsController');

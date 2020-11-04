@@ -14,4 +14,8 @@ class Cart extends Model
     public $fillable = [
         'status',
     ];
+
+    public function products(){
+        return $this->belongsToMany('App\Product', 'product_cart')->withPivot('quantity');
+    }
 }

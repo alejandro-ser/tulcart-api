@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Product;
+use App\ProductCart;
 use Illuminate\Http\Request;
 
 class ProductsController extends Controller
@@ -99,5 +100,16 @@ class ProductsController extends Controller
     {
         $product =  Product::destroy($id);
         return '{"id":"'.$id.'","msg":"Eliminado" }';
+    }
+
+    public function addToCart(Request $request)
+    {
+        $productCart = new ProductCart();
+        $productCart->product_id = $request->input('product_id');
+        $productCart->cart_id =$request->input('cart_id');
+        $productCart->quantity =$request->input('quantity');
+        $productCart->save();
+
+        return response()->json($productCart, 200);
     }
 }
